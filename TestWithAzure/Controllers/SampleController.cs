@@ -24,5 +24,11 @@ namespace TestWithAzure.Controllers
             db.SaveChanges();
             return RedirectToAction("Create");
         }
+
+        public IActionResult GetAll()
+        {
+            List<UserInformation> UI = db.Azure_UserInformation_Mst.ToList();
+            return View(UI);
+        }
     }
 }
