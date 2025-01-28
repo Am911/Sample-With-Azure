@@ -11,5 +11,6 @@ namespace TestWithAzure.DataBaseConnection
         }
 
         public DbSet<UserInformation> Azure_UserInformation_Mst {  get; set; }
+        public DbSet<UserBankDetails> Azure_UserBankDetails_Mst {  get; set; }
     }
 }
