@@ -27,7 +27,6 @@ namespace TestWithAzure.Controllers
 
         public IActionResult GetAll()
         {
-
             List<UserInformation> UI = db.Azure_UserInformation_Mst.ToList();
             return View(UI);
         }
